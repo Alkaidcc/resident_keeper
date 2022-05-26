@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <div class="container">
     <div class="login-form">
@@ -7,19 +9,21 @@
         <form>
           <div class="input-group">
             <label for="email">Email</label>
-            <input id="email" required placeholder="Enter your email" />
+            <input id="email" required placeholder="Enter your email">
           </div>
           <div class="input-group">
             <label for="password">Password</label>
-            <input id="password" type="password" required />
+            <input id="password" type="password" required>
           </div>
           <div class="input-group">
-            <input id="rem" type="checkbox" name="remember" />
+            <input id="rem" type="checkbox" name="remember">
             <label for="rem">Remember for 30 days</label>
             <a href="https://www.baidu.com">Forgot password</a>
           </div>
           <div class="input-group">
-            <button type="submit">Sign in</button>
+            <button type="submit">
+              Sign in
+            </button>
           </div>
         </form>
         <p>
@@ -29,16 +33,14 @@
     </div>
     <div class="land-picture">
       <div class="circle">
-        <div class="shade"></div>
+        <div class="shade" />
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
-
 <style scoped>
-.container {
+/* .container {
   position: absolute;
   display: flex;
   width: 100%;
@@ -145,5 +147,5 @@ a {
   text-decoration: none;
   font-size: 14px;
   float: right;
-}
+} */
 </style>
