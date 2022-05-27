@@ -1,13 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+// reset stylesheet
 import '@/styles/reset.scss'
-import store from './store'
-import router from './router'
+// pinia store
+import pinia from '@/store/index'
+// vue router
+import router from '@/router/index'
 import 'uno.css'
 
 const app = createApp(App)
 
-app.use(store)
-app.use(router)
-
-app.mount('#app')
+app.use(router).use(pinia).mount('#app')

@@ -14,13 +14,13 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/',
-    name: 'Index',
+    name: 'Home',
     meta: {
       title: '首页',
       keepAlive: true,
       requireAuth: true,
     },
-    component: () => import('@/pages/index.vue'),
+    component: () => import('@/views/home/index.vue'),
   },
 ]
 
